@@ -37,6 +37,7 @@ add_subdirectory( virtual_inheritance )
 add_subdirectory( asan )
 
 # Include the non-Windows-native exercises.
+set(MSVC TRUE)
 if( NOT MSVC )
    add_subdirectory( helgrind )
    add_subdirectory( python )

@@ -38,3 +38,7 @@ code/stl/randomize.nostl
 code/templates/playwithsort
 code/valgrind/randomize
 code/virtual_inheritance/trymultiherit
+
+# CLion related
+code/cmake-build*
+.idea
