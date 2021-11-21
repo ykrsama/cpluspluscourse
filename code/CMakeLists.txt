@@ -35,6 +35,7 @@ add_subdirectory( templates )
 add_subdirectory( valgrind )
 add_subdirectory( virtual_inheritance )
 add_subdirectory( asan )
+add_subdirectory( pointers )
 
 # Include the non-Windows-native exercises.
 set(MSVC TRUE)
