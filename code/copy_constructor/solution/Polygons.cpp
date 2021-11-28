@@ -12,6 +12,11 @@ Polygon::Polygon(int n, float radius) {
     std::cout << "Construct Polygon\n";
 };
 
+Polygon::~Polygon() {
+    delete m_nbSides;
+    delete m_radius;
+}
+
 // Create a copy constructor for Polygon
 Polygon::Polygon(const Polygon& rhs){
     m_nbSides = new int;

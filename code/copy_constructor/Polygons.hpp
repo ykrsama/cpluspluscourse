@@ -1,6 +1,7 @@
 class Polygon {
 public:
     Polygon(int n, float radius);
+    ~Polygon();
     float computePerimeter();
     void setNbSides(int n);
     void setRadius(float r);
