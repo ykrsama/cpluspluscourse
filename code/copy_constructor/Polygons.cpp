@@ -13,9 +13,11 @@ Polygon::Polygon(int n, float radius) {
 };
 
 Polygon::~Polygon() {
+    delete m_nbSides;
+    delete m_radius;
 }
 
-// Create a copy constructor for Polygon
+// Create a copy constructor in Polygon
 
 void Polygon::setNbSides(int n) {
     *m_nbSides = n;
@@ -35,6 +37,8 @@ Pentagon::Pentagon(float radius) : Polygon(5, radius) {}
 Hexagon::Hexagon(float radius) : Polygon(6, radius) {
     std::cout << "Construct Hexagon\n";
 }
+
+// Create a copy constructor in Hexagon
 
 float Hexagon::computePerimeter() {
     //std::cout << "Optimized computePerimeter for hexagons" << std::endl;
